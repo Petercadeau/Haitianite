@@ -1,5 +1,5 @@
 <?php
-	include "php/conexion.php";
+	/*include "php/conexion.php";
 
 	$sql = "SELECT * FROM publicaciones";
 	$stmt = sqlsrv_query( $conn, $sql );
@@ -8,7 +8,7 @@
     	die( print_r( sqlsrv_errors(), true) );
 	}
 
-	
+	*/
     /*	echo $row['pub_cat'].", ".$row['pub_img'].".jpg<br />";*/
 	
 
@@ -452,7 +452,7 @@
 
 					<!--PUB-->
 
-<?php while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) { ?>
+<?php /* while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {  */?>
 					<!-- Services Slider Item-->
 					<div class="owl-item services_item">
 						<div class="services_item_inner">
@@ -474,8 +474,8 @@
 						</div>
 					</div>				
 <?php
-	}
-	sqlsrv_free_stmt( $stmt);
+	/*}
+	sqlsrv_free_stmt( $stmt);*/
 ?>
 
 				</div>
